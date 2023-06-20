@@ -1,0 +1,22 @@
+# Tanner Holeton
+#M02-CaseStudy
+#This will accept students names and gpa's and test if the student made either the Dean's list or Honor Roll
+
+
+print("Enter Student's Last Name or ZZZ To Quit: ")
+Lname = str(input())
+if Lname == "ZZZ":
+    exit()
+
+print("Enter Student's First Name: ")
+Fname = str(input())
+
+print("Enter Student's GPA: ")
+gpa = float(input())
+
+if gpa >= 3.5:
+    print(Fname, Lname, "made the Dean's list")
+elif gpa >= 3.25:
+    print(Fname, Lname, "made the Honor Roll")
+else:
+    print(Fname, Lname, "Does not Qualify for anything")
